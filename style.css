@@ -1,0 +1,2921 @@
+@media screen and (min-width:962px){
+    body{
+        background-color: rgb(33, 35, 39);
+        justify-content: center;
+    }
+
+    #screen{
+        background-color: rgb(0, 125, 0);
+        width: 10px;
+        height: 10px;
+    }
+
+    .butRun{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none;
+      }
+
+    #runzagInfo{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+        user-select: none;
+    }
+    .censInfo{
+        font-size: 30px;
+        padding-inline: 10%;
+        color: #FFFFFF;
+    }
+
+    .mainesInfo{
+        margin-top: 70px;
+        display: flex;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 60%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+
+    .mainesCens{
+        display: inline;
+        justify-content: center;
+        height: 800px;
+        width: 70%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+
+    #runzagCens{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 130px;
+        color: aliceblue;
+        user-select: none;
+    }
+
+    .inputCens{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+
+    .inputCens:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    .inputCens:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+
+    .functions{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    #clear{
+        margin-right: 20px;
+        float: left;
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        margin-left: 1%;
+        user-select: none;
+    }
+
+    #copy{
+        margin-left: 40px;
+        float: left;
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        user-select: none;
+    }
+
+    #copy:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+
+    #copy:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+
+    #clear:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+
+    #clear:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+
+    #menuButton {   
+        margin-left: 10px;
+        margin-top: -40px;
+        text-align: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 33px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+
+    #menuButton.open {
+        left: 280px;
+        transition: left 0.3s ease;
+    }
+
+    #menuButtonCens {   
+        margin-left: 10px;
+        margin-top: -40px;
+        text-align: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 33px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+
+    #menuButtonCens.open {
+        left: 280px;
+        transition: left 0.3s ease;
+    }
+
+    #navPanel {
+        position: fixed;
+        left: -280px; 
+        top: 0;
+        width: 280px;
+        height: 100%;
+        background-color: rgb(41, 42, 45);
+        transition: left 0.3s ease; 
+        z-index: 999;
+        border-radius: 0 30px 30px 0;  
+    }
+
+    #navPanel.open {
+        left: 0; 
+    }
+
+    #navPanel ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    #navPanel a{
+        display: block;
+        text-decoration: none;
+    }
+
+    #navPanel ul li {
+        padding-top: 10px;
+        background-color: rgb(51, 52, 54);;
+        text-align: center;
+        height: 33px;
+        width: 96%;
+        margin: 6px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+    }
+
+    #navPanel ul li:hover {
+        background-color: rgb(66, 67, 70);
+        text-decoration: none;
+    }
+    
+    #navPanel ul a li{
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    #mainFunct{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        user-select: none;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    #closePanel{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    header{
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        font-family:'Arial Black';
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .maines{
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 70%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+
+    .buttons{
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .txt{
+        color: black;
+        font-size: 20px;  
+    }
+    
+    .runzag{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 150px;
+        color: aliceblue;
+        user-select: none;
+    }
+    
+    #input{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+    
+    #input:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    #input:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+    
+    #run{
+        float: right;
+        appearance: none;
+        background-color: rgb(51, 95, 255);
+        border: 2px solid rgb(51, 95, 255);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 25px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 25%;
+        margin-right: 5%;
+        will-change: transform;
+        
+      }
+      
+      #run:disabled {
+        pointer-events: none;
+      }
+      
+      #run:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #run:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+      #but1{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but1:disabled {
+        pointer-events: none;
+      }
+      
+      #but1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but1:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+    
+    
+      #but2{
+        appearance: none;
+      background-color: rgb(228, 225, 225);
+      border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but2:disabled {
+        pointer-events: none;
+      }
+      
+      #but2:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but2:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+}
+@media screen and (max-width:961px) and (min-width:701px){
+    body{
+        background-color: rgb(33, 35, 39);
+        justify-content: center;
+    }
+
+    #screen{
+        background-color: green;
+    }
+
+    #runzagInfo{
+      font-size: 60px;
+      justify-content: center;
+      display: flex;
+      padding-top: 30px;
+      text-align: center;
+      height: 100px;
+      color: aliceblue;
+      user-select: none;
+  }
+  .censInfo{
+      font-size: 30px;
+      padding-inline: 10%;
+      color: #FFFFFF;
+  }
+
+  .mainesInfo{
+      margin-top: 70px;
+      display: flex;
+      display: inline;
+      justify-content: center;
+      height: 750px;
+      width: 60%;
+      background-color: rgb(41, 42, 45);
+      border-radius: 40px;
+      font-family:'Arial Black';
+  }
+
+  .mainesCens{
+      display: inline;
+      justify-content: center;
+      height: 800px;
+      width: 75%;
+      background-color: rgb(41, 42, 45);
+      border-radius: 40px;
+      font-family:'Arial Black';
+  }
+
+  #runzagCens{
+      font-size: 60px;
+      justify-content: center;
+      display: flex;
+      padding-top: 30px;
+      text-align: center;
+      height: 130px;
+      color: aliceblue;
+      user-select: none;
+  }
+
+  .inputCens{
+      resize: none;
+      background-color: rgb(77, 77, 104);
+      border-radius: 20px;
+      height: 40px;
+      width: 60%;
+      margin-left: 40px;
+      border:3px solid rgb(65, 65, 88);
+      min-height: 50px;
+      padding: 10px;
+      font-size: 20px;
+      color: aliceblue;
+      max-height: 450px;
+  }
+
+  .inputCens:hover{
+      border:3px solid rgb(75, 75, 100);
+  }
+  
+  .inputCens:focus{
+      outline: none;
+      border-color: rgb(82, 82, 110);
+  }
+
+  .functions{
+      margin-top: 10px;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      text-align: center;
+  }
+  #clear{
+      height: 35px;
+      width: 90px;
+      background-color: rgb(78, 78, 78);
+      color: rgb(209, 209, 209);
+      font-size: 14px;
+      border: none;
+      border-radius: 12px;
+      user-select: none;
+    }
+
+  #copy{
+      height: 35px;
+      width: 90px;
+      background-color: rgb(78, 78, 78);
+      color: rgb(209, 209, 209);
+      font-size: 14px;
+      border: none;
+      border-radius: 12px;
+      user-select: none;
+  }
+
+  #copy:hover{
+      background-color: rgb(86, 86, 86);
+      cursor: pointer;
+      color: rgb(203, 203, 203);
+  }
+
+  #copy:active{
+      background-color: rgb(100, 100, 100);
+      cursor: pointer;
+      color: rgb(230, 230, 230);
+  }
+
+  #clear:hover{
+      background-color: rgb(86, 86, 86);
+      cursor: pointer;
+      color: rgb(203, 203, 203);
+  }
+
+  #clear:active{
+      background-color: rgb(100, 100, 100);
+      cursor: pointer;
+      color: rgb(230, 230, 230);
+  }
+
+  #menuButton{   
+      margin-left: 10px;
+      margin-top: -40px;
+      text-align: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(41, 42, 45);
+      left: 0%;
+      right: 0%;
+      position: fixed;
+      font-size: 33px;
+      cursor: pointer;
+      z-index: 1000;
+      color: white;
+      border-radius: 25%;
+      transition: left 0.3s ease;
+      user-select: none;
+  }
+
+  #menuButton.open {
+      left: 280px;
+      transition: left 0.3s ease;
+  }
+
+    #menuButtonCens{   
+      margin-left: 10px;
+      margin-top: -17px;
+      text-align: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(41, 42, 45);
+      left: 0%;
+      right: 0%;
+      position: fixed;
+      font-size: 33px;
+      cursor: pointer;
+      z-index: 1000;
+      color: white;
+      border-radius: 25%;
+      transition: left 0.3s ease;
+      user-select: none;
+  }
+
+  #menuButtonCens.open {
+      left: 280px;
+      transition: left 0.3s ease;
+  }
+
+  #navPanel {
+      position: fixed;
+      left: -280px; 
+      top: 0;
+      width: 280px;
+      height: 100%;
+      background-color: rgb(41, 42, 45);
+      transition: left 0.3s ease; 
+      z-index: 999;
+      border-radius: 0 30px 30px 0;  
+  }
+
+  #navPanel.open {
+      left: 0; 
+  }
+
+  #navPanel ul {
+      list-style: none;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      margin-left: 10px;
+      text-decoration: none;
+  }
+
+  #navPanel a{
+      display: block;
+      text-decoration: none;
+  }
+
+  #navPanel ul li {
+      padding-top: 10px;
+      background-color: rgb(51, 52, 54);;
+      text-align: center;
+      height: 33px;
+      width: 96%;
+      margin: 6px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      text-decoration: none;
+  }
+
+  #navPanel ul li:hover {
+      background-color: rgb(66, 67, 70);
+      text-decoration: none;
+  }
+  
+  #navPanel ul a li{
+      color: white;
+      text-decoration: none;
+      font-size: 19px;
+  }
+
+  #mainFunct{
+      font-size: 30px;
+      color: white;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 600;
+      user-select: none;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  #closePanel{
+      font-size: 20px;
+      color: white;
+      margin-top: 20px;
+  }
+
+  .butRun{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    
+    header{
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        font-family:'Arial Black';
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .maines{
+        text-align: center;
+        align-items: center;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 80%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+    
+    .zag{
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 150px;
+        color: aliceblue;
+    }
+    
+    .buttons{
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    #but1{
+        height: 90%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(218, 218, 218);
+        border-radius: 10px;
+        border: 2px solid rgb(87, 87, 87);
+        margin-right: 50px;  
+    }
+    
+    #but2{
+        height: 90%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(218, 218, 218);
+        border-radius: 10px;
+        border: 2px solid rgb(87, 87, 87);
+        margin-left: 50px; 
+    }
+    
+    .txt{
+        color: black;
+        font-size: 19px;  
+    }
+    
+    .runzag{
+        font-size: 45px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 80px;
+        color: aliceblue;
+    }
+    
+    #input{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 80%;
+        margin-left: 7%;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+    
+    #input:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    #input:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+    
+    
+    #run{
+        appearance: none;
+        background-color: rgb(51, 95, 255);
+        border: 2px solid rgb(51, 95, 255);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        margin-top: 30px;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 50%;
+        will-change: transform;
+      }
+
+      #run.runAbsolut{
+        display: none;
+    }
+      
+      #run:disabled {
+        pointer-events: none;
+      }
+      
+      #run:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #run:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+    
+    
+      #but1{
+        appearance: none;
+      background-color: rgb(228, 225, 225);
+      border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but1:disabled {
+        pointer-events: none;
+      }
+      
+      #but1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but1:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+    
+    
+      #but2{
+        appearance: none;
+      background-color: rgb(228, 225, 225);
+      border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but2:disabled {
+        pointer-events: none;
+      }
+      
+      #but2:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but2:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+}
+
+@media screen and (max-width:700px) and (min-width:631px){
+    body{
+        background-color: rgb(33, 35, 39);
+        justify-content: center;
+    }
+
+    #runzagInfo{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+        user-select: none;
+    }
+    .censInfo{
+        font-size: 30px;
+        padding-inline: 10%;
+        color: #FFFFFF;
+    }
+  
+    .mainesInfo{
+        margin-top: 70px;
+        display: flex;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 60%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    .mainesCens{
+        display: inline;
+        justify-content: center;
+        height: 800px;
+        width: 80%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    #runzagCens{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 130px;
+        color: aliceblue;
+        user-select: none;
+    }
+  
+    .inputCens{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+  
+    .inputCens:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    .inputCens:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+  
+    .functions{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    #clear{
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        user-select: none;
+      }
+  
+    #copy{
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        user-select: none;
+    }
+  
+    #copy:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #copy:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #clear:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #clear:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #menuButton {   
+        margin-left: 10px;
+        margin-top: -15px;
+        text-align: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 33px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButton.open {
+        left: 280px;
+        transition: left 0.3s ease;
+    }
+
+    #menuButtonCens {   
+        margin-left: 10px;
+        margin-top: -15px;
+        text-align: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 33px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButtonCens.open {
+        left: 280px;
+        transition: left 0.3s ease;
+    }
+  
+    #navPanel {
+        position: fixed;
+        left: -280px; 
+        top: 0;
+        width: 280px;
+        height: 100%;
+        background-color: rgb(41, 42, 45);
+        transition: left 0.3s ease; 
+        z-index: 999;
+        border-radius: 0 30px 30px 0;  
+    }
+  
+    #navPanel.open {
+        left: 0; 
+    }
+  
+    #navPanel ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+  
+    #navPanel a{
+        display: block;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li {
+        padding-top: 10px;
+        background-color: rgb(51, 52, 54);;
+        text-align: center;
+        height: 33px;
+        width: 96%;
+        margin: 6px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li:hover {
+        background-color: rgb(66, 67, 70);
+        text-decoration: none;
+    }
+    
+    #navPanel ul a li{
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+  
+    #mainFunct{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        user-select: none;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    #closePanel{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+  
+    .butRun{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+      
+    
+    header{
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        font-family:'Arial Black';
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .maines{
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 85%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+    
+    .zag{
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 150px;
+        color: aliceblue;
+    }
+    
+    .buttons{
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    #but1{
+        height: 90%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(218, 218, 218);
+        border-radius: 10px;
+        border: 2px solid rgb(87, 87, 87);
+        margin-right: 50px;  
+    }
+    
+    #but2{
+        height: 90%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(218, 218, 218);
+        border-radius: 10px;
+        border: 2px solid rgb(87, 87, 87);
+        margin-left: 50px; 
+    }
+    
+    .txt{
+        color: black;
+        font-size: 19px;  
+    }
+    
+    .runzag{
+        font-size: 45px;
+        justify-content: center;
+        display: flex;
+        padding-top: 22px;
+        text-align: center;
+        height: 80px;
+        color: aliceblue;
+        margin-bottom: 12px;
+    }
+    
+    #input{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 75%;
+        margin-left: 10%;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 17px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+    
+    #input:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    #input:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+    
+    
+    #run{
+        appearance: none;
+        background-color: rgb(51, 95, 255);
+        border: 2px solid rgb(51, 95, 255);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        margin-top: 30px;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 50%;
+        will-change: transform;
+      }
+
+      #run.runAbsolut{
+        display: none;
+      }
+    
+      #run:disabled {
+        pointer-events: none;
+      }
+      
+      #run:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #run:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+      #but1{
+        appearance: none;
+      background-color: rgb(228, 225, 225);
+      border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but1:disabled {
+        pointer-events: none;
+      }
+      
+      #but1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but1:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+      #but2{
+        appearance: none;
+      background-color: rgb(228, 225, 225);
+      border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 5%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but2:disabled {
+        pointer-events: none;
+      }
+      
+      #but2:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but2:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+}
+
+@media screen and (max-width:630px) and (min-width:371px){
+    body{
+        background-color: rgb(33, 35, 39);
+        justify-content: center;
+    }
+        #runzagInfo{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+        user-select: none;
+    }
+    .censInfo{
+        font-size: 30px;
+        padding-inline: 10%;
+        color: #FFFFFF;
+    }
+  
+    .mainesInfo{
+        margin-top: 70px;
+        display: flex;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 60%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    .mainesCens{
+        display: inline;
+        justify-content: center;
+        height: 800px;
+        width: 85%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    #runzagCens{
+        font-size: 45px;
+        justify-content: center;
+        display: flex;
+        padding-top: 22px;
+        text-align: center;
+        height: 110px;
+        color: aliceblue;
+        user-select: none;
+    }
+  
+    .inputCens{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+        
+    }
+  
+    .inputCens:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    .inputCens:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+  
+    .functions{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    #clear{
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        user-select: none;
+      }
+  
+    #copy{
+        height: 35px;
+        width: 90px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 14px;
+        border: none;
+        border-radius: 12px;
+        user-select: none;
+    }
+  
+    #copy:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #copy:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #clear:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #clear:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #menuButton {   
+        margin-left: 10px;
+        margin-top: -42px;
+        text-align: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButton.open {
+        left: 230px;
+        transition: left 0.3s ease;
+    }
+
+    #menuButtonCens {   
+        margin-left: 10px;
+        margin-top: -24px;
+        text-align: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButtonCens.open {
+        left: 230px;
+        transition: left 0.3s ease;
+    }
+  
+    #navPanel {
+        position: fixed;
+        left: -230px; 
+        top: 0;
+        width: 230px;
+        height: 100%;
+        background-color: rgb(41, 42, 45);
+        transition: left 0.3s ease; 
+        z-index: 999;
+        border-radius: 0 30px 30px 0;  
+    }
+  
+    #navPanel.open {
+        left: 0; 
+    }
+  
+    #navPanel ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+  
+    #navPanel a{
+        display: block;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li {
+        padding-top: 10px;
+        background-color: rgb(51, 52, 54);;
+        text-align: center;
+        height: 30px;
+        width: 96%;
+        margin: 10px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li:hover {
+        background-color: rgb(66, 67, 70);
+        text-decoration: none;
+    }
+    
+    #navPanel ul a li{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+  
+    #mainFunct{
+        font-size: 28px;
+        color: white;
+        margin-top: 19px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        user-select: none;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    #closePanel{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+  
+    .butRun{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    header{
+        justify-content: center;
+        width: 100%;
+        border-radius: 10px;
+        font-family:'Arial Black';
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .maines{
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 92%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+    
+    .zag{
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 150px;
+        color: aliceblue;
+    }
+    
+    .buttons{
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .txt{
+        color: black;
+        font-size: 19px;  
+    }
+    
+    .runzag{
+      font-size: 45px;
+      justify-content: center;
+      display: flex;
+      padding-top: 22px;
+      text-align: center;
+      height: 80px;
+      color: aliceblue;
+      margin-bottom: 12px;
+    }
+    
+    #input{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 70%;
+        margin-left: 12%;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 17px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+    
+    #input:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    #input:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+    
+    #run{
+        appearance: none;
+        background-color: rgb(51, 95, 255);
+        border: 2px solid rgb(51, 95, 255);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        margin-top: 30px;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 50%;
+        will-change: transform;
+        
+      }
+      
+      #run.runAbsolut{
+        display: none;
+      }
+
+      #run:disabled {
+        pointer-events: none;
+      }
+      
+      #run:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #run:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+
+      #but1{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 2%;
+        will-change: transform;
+        height: 70%;
+        width: 150px;
+      }
+      
+      #but1:disabled {
+        pointer-events: none;
+      }
+      
+      #but1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but1:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+      #but2{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 2%;
+        will-change: transform;
+        height: 70%;
+        width: 150px;
+      }
+      
+      #but2:disabled {
+        pointer-events: none;
+      }
+      
+      #but2:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but2:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+}
+
+@media screen and (max-width:370px) and (min-width:236px){
+  body{
+      background-color: rgb(33, 35, 39);
+      justify-content: center;
+  }
+
+    #runzagInfo{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+        user-select: none;
+    }
+    .censInfo{
+        font-size: 20px;
+        padding-inline: 10%;
+        color: #FFFFFF;
+    }
+  
+    .mainesInfo{
+        margin-top: 70px;
+        display: flex;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 60%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    .mainesCens{
+        display: inline;
+        justify-content: center;
+        height: 800px;
+        width: 96%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    #runzagCens{
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 75px;
+        color: aliceblue;
+        user-select: none;
+    }
+  
+    .inputCens{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+  
+    .inputCens:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    .inputCens:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+  
+    .functions{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    #clear{
+        height: 25px;
+        width: 70px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 10px;
+        border: none;
+        border-radius: 10px;
+        user-select: none;
+      }
+  
+    #copy{
+        height: 25px;
+        width: 70px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 10px;
+        border: none;
+        border-radius: 10px;
+        user-select: none;
+    }
+  
+    #copy:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #copy:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #clear:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #clear:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #menuButton {   
+        margin-left: 8px;
+        margin-top: -45px;
+        text-align: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButton.open {
+        left: 185px;
+        transition: left 0.3s ease;
+    }
+
+    #menuButtonCens {   
+        margin-left: 8px;
+        margin-top: -45px;
+        text-align: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 26px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 25%;
+        transition: left 0.3s ease;
+        user-select: none;
+    }
+  
+    #menuButtonCens.open {
+        left: 185px;
+        transition: left 0.3s ease;
+    }
+  
+    #navPanel {
+        position: fixed;
+        left: -190px; 
+        top: 0;
+        width: 190px;
+        height: 100%;
+        background-color: rgb(41, 42, 45);
+        transition: left 0.3s ease; 
+        z-index: 999;
+        border-radius: 0 30px 30px 0;  
+    }
+  
+    #navPanel.open {
+        left: 0; 
+    }
+  
+    #navPanel ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 7px;
+        text-decoration: none;
+    }
+  
+    #navPanel a{
+        display: block;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li {
+        padding-top: 10px;
+        background-color: rgb(51, 52, 54);;
+        text-align: center;
+        height: 30px;
+        width: 96%;
+        margin: 8px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li:hover {
+        background-color: rgb(66, 67, 70);
+        text-decoration: none;
+    }
+    
+    #navPanel ul a li{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+  
+    #mainFunct{
+        font-size: 28px;
+        color: white;
+        margin-top: 19px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        user-select: none;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    #closePanel{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+  
+    .butRun{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+
+  main{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .maines{
+      display: inline;
+      justify-content: center;
+      height: 750px;
+      width: 96%;
+      background-color: rgb(41, 42, 45);
+      border-radius: 40px;
+      font-family:'Arial Black';
+  }
+  
+  .zag{
+      font-size: 30px;
+      justify-content: center;
+      display: flex;
+      padding-top: 40px;
+      text-align: center;
+      height: 150px;
+      color: aliceblue;
+  }
+  
+  .buttons{
+      height: 50px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      margin-top: 50px;
+  }
+  .txt{
+      color: black;
+      font-size: 19px;  
+  }
+  
+  .runzag{
+      font-size: 25px;
+      justify-content: center;
+      display: flex;
+      padding-top: 35px;
+      text-align: center;
+      height: 80px;
+      color: aliceblue;
+  }
+  
+  #input{
+      resize: none;
+      background-color: rgb(77, 77, 104);
+      border-radius: 20px;
+      height: 40px;
+      width: 70%;
+      margin-left: 10%;
+      border:3px solid rgb(65, 65, 88);
+      min-height: 50px;
+      padding: 10px;
+      font-size: 15px;
+      color: aliceblue;
+      max-height: 450px;
+  }
+  
+  #input:hover{
+      border:3px solid rgb(75, 75, 100);
+  }
+  
+  #input:focus{
+      outline: none;
+      border-color: rgb(82, 82, 110);
+  }
+  
+  
+  #run{
+      appearance: none;
+      background-color: rgb(51, 95, 255);
+      border: 2px solid rgb(51, 95, 255);
+      border-radius: 15px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+      margin-top: 19px;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 16px 14px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 50%;
+      will-change: transform;
+      
+    }
+
+    #run.runAbsolut{
+        display: none;
+      }
+    
+    #run:disabled {
+      pointer-events: none;
+    }
+    
+    #run:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+    
+    #run:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  
+  
+  
+    #but1{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 2%;
+        will-change: transform;
+        height: 70%;
+        width: 150px;
+    }
+    
+    #but1:disabled {
+      pointer-events: none;
+    }
+    
+    #but1:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+    
+    #but1:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  
+  
+  
+    #but2{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 2%;
+        will-change: transform;
+        height: 70%;
+        width: 150px;
+    }
+    
+    #but2:disabled {
+      pointer-events: none;
+    }
+    
+    #but2:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+    }
+    
+    #but2:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  
+}
+
+@media screen and (max-width:235px) and (min-width:100px){
+    body{
+        background-color: rgb(33, 35, 39);
+        justify-content: center;
+    }
+
+    #runzagInfo{
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 100px;
+        color: aliceblue;
+        user-select: none;
+    }
+    .censInfo{
+        font-size: 12px;
+        padding-inline: 10%;
+        color: #FFFFFF;
+    }
+  
+    .mainesInfo{
+        margin-top: 70px;
+        display: flex;
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 60%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    .mainesCens{
+        display: inline;
+        justify-content: center;
+        height: 800px;
+        width: 96%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+  
+    #runzagCens{
+        font-size: 25px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 65px;
+        color: aliceblue;
+        user-select: none;
+    }
+  
+    .inputCens{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 60%;
+        margin-left: 40px;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+  
+    .inputCens:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    .inputCens:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+  
+    .functions{
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    #clear{
+        height: 25px;
+        width: 70px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 10px;
+        border: none;
+        border-radius: 10px;
+        user-select: none;
+      }
+  
+      #copy{
+        height: 25px;
+        width: 70px;
+        background-color: rgb(78, 78, 78);
+        color: rgb(209, 209, 209);
+        font-size: 10px;
+        border: none;
+        border-radius: 10px;
+        user-select: none;
+    }
+  
+    #copy:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #copy:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #clear:hover{
+        background-color: rgb(86, 86, 86);
+        cursor: pointer;
+        color: rgb(203, 203, 203);
+    }
+  
+    #clear:active{
+        background-color: rgb(100, 100, 100);
+        cursor: pointer;
+        color: rgb(230, 230, 230);
+    }
+  
+    #menuButton {   
+        margin-left: 8px;
+        margin-top: -45px;
+        text-align: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 23%;
+        transition: left 0.3s ease;
+        user-select: none;
+        transform: none;
+    }
+  
+    #menuButton.open {
+        transition: left 0.3s ease;
+    }
+
+    #menuButtonCens {   
+        margin-left: 8px;
+        margin-top: -35px;
+        text-align: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: rgb(41, 42, 45);
+        left: 0%;
+        right: 0%;
+        position: fixed;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        border-radius: 23%;
+        transition: left 0.3s ease;
+        user-select: none;
+        transform: none;
+    }
+  
+    #menuButtonCens.open {
+        transition: left 0.3s ease;
+    }
+  
+    #navPanel {
+        position: fixed;
+        left: -150px; 
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background-color: rgb(41, 42, 45);
+        transition: left 0.3s ease; 
+        z-index: 999;
+        border-radius: 0 30px 30px 0;  
+    }
+  
+    #navPanel.open {
+        left: 0; 
+    }
+  
+    #navPanel ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 7px;
+        text-decoration: none;
+    }
+  
+    #navPanel a{
+        display: block;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li {
+        padding-top: 10px;
+        background-color: rgb(51, 52, 54);;
+        text-align: center;
+        height: 30px;
+        width: 96%;
+        margin: 8px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+    }
+  
+    #navPanel ul li:hover {
+        background-color: rgb(66, 67, 70);
+        text-decoration: none;
+    }
+    
+    #navPanel ul a li{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+  
+    #mainFunct{
+        font-size: 22px;
+        color: white;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 600;
+        user-select: none;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    #closePanel{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+  
+    .butRun{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    main{
+        display: flex;
+        width: 100%;
+        min-height: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .maines{
+        display: inline;
+        justify-content: center;
+        height: 750px;
+        width: 96%;
+        background-color: rgb(41, 42, 45);
+        border-radius: 40px;
+        font-family:'Arial Black';
+    }
+    
+    .zag{
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        padding-top: 40px;
+        text-align: center;
+        height: 150px;
+        color: aliceblue;
+    }
+    
+    .buttons{
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    .txt{
+        color: black;
+        font-size: 19px;  
+    }
+    
+    .runzag{
+        font-size: 21px;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        text-align: center;
+        height: 80px;
+        color: aliceblue;
+    }
+    
+    #input{
+        resize: none;
+        background-color: rgb(77, 77, 104);
+        border-radius: 20px;
+        height: 40px;
+        width: 70%;
+        margin-left: 7%;
+        border:3px solid rgb(65, 65, 88);
+        min-height: 50px;
+        padding: 10px;
+        font-size: 15px;
+        color: aliceblue;
+        max-height: 450px;
+    }
+    
+    #input:hover{
+        border:3px solid rgb(75, 75, 100);
+    }
+    
+    #input:focus{
+        outline: none;
+        border-color: rgb(82, 82, 110);
+    }
+    
+    
+    #run{
+        appearance: none;
+        background-color: rgb(51, 95, 255);
+        border: 2px solid rgb(51, 95, 255);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        margin-top: 19px;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 50%;
+        will-change: transform;
+      }
+
+      #run.runAbsolut{
+        display: none;
+      }
+      
+      #run:disabled {
+        pointer-events: none;
+      }
+      
+      #run:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #run:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+      #but1{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 6px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-right: 1%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but1:disabled {
+        pointer-events: none;
+      }
+      
+      #but1:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but1:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+    
+    
+      #but2{
+        appearance: none;
+        background-color: rgb(228, 225, 225);
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 6px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 1%;
+        will-change: transform;
+        height: 90%;
+        width: 250px;
+      }
+      
+      #but2:disabled {
+        pointer-events: none;
+      }
+      
+      #but2:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      #but2:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    
+  }
+
+
+
+
+
