@@ -61,7 +61,7 @@ function runShifr(){
     if(zashifr === true){     
         var input = document.getElementById("input").value;
         if(input === "sigma1000-7"){
-            alert("ок")
+            alert("Дальше онли факты!")
             window.location.href = "info.html";
         }
         var result = input
@@ -105,7 +105,7 @@ function runShifr(){
     if(zashifr === false){
         var input = document.getElementById("input").value;
         if(input === "sigma1000-7"){
-            alert("ок")
+            alert("Дальше онли факты!")
             window.location.href = "info.html";
         }
         var result = input
@@ -199,7 +199,7 @@ function runLay(){
     if(zashifr === true){     
         var input = document.getElementById("input").value;
         if(input === "sigma1000-7"){
-            alert("ок")
+            alert("Дальше онли факты!")
             window.location.href = "info.html";
         }
         var result = input
@@ -243,7 +243,7 @@ function runLay(){
     if(zashifr === false){
         var input = document.getElementById("input").value;
         if(input === "sigma1000-7"){
-            alert("ок")
+            alert("Дальше онли факты!")
             window.location.href = "info.html";
         }
         var result = input
