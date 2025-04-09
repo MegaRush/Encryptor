@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цензура</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <div id="menuButtonCens" onclick="toggleNavPanel(this)">☰</div>
+ 
+    <div id="navPanel">
+        <div id="mainFunct"><p>Цензура</p></div>
+        <ul>
+            <a href="censorship.html"><li>Цензура</li></a>
+            <a href="layout.html"><li>Раскладка</li></a>
+            <a href="index.html"><li>Зашифровка</li></a>
+        </ul>
+    </div>
+    
+    <header>
+
+    <main>
+        <div class="mainesCens">
+            <div id="runzagCens">Цензура</div>
+            <textarea type="text" placeholder="Введите текст" id="input" class="inputCens"></textarea>
+            <button id="run" class="runAbsolut" onclick="runCens()">Выполнить</button>
+            
+            <div class="butRun"><button id="run" onclick="runCens()">Выполнить</button></div>
+            <div class="functions">
+                <button id="copy" onclick="copy();">Копирвоать</button>
+                <button id="clear" onclick="clearing()">Очистить</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const textarea = document.getElementById('input');
+
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+
+</body>
+</html>

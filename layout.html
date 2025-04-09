@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раскладка</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <div id="menuButton" onclick="toggleNavPanel(this)">☰</div>
+
+    <div id="navPanel">
+        <div id="mainFunct"><p>Раскладка</p></div>
+        <ul>
+            <a href="censorship.html"><li>Цензура</li></a>
+            <a href="layout.html"><li>Раскладка</li></a>
+            <a href="index.html"><li>Зашифровка</li></a>
+        </ul>
+    </div>
+    
+    <header>
+        <div class="buttons">
+            <button id="but1" onclick="enRus();">
+                С Англ. на Рус.
+            </button>
+            <button id="but2" onclick="rusEn();">
+                С Рус. на Англ.
+            </button>
+    </header>
+
+    <main>
+        <div class="maines">
+            <div id="runzagLay" class="runzag">Раскладка</div>
+            <textarea type="text" placeholder="Введите текст" id="input"></textarea>
+            <button id="run" class="runAbsolut" onclick="runLay()">Выполнить</button>
+
+            <div class="butRun"> <button id="run" onclick="runLay()">Выполнить</button> </div>
+            <div class="functions">
+                <button id="copy" onclick="copy();">Копирвоать</button>
+                <button id="clear" onclick="clearing()">Очистить</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const textarea = document.getElementById('input');
+
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+
+</body>
+</html>
